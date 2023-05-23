@@ -143,6 +143,10 @@ body{
   color: #e5edef;
 }
 
+.app-controllers__tip-item--active{
+  background-color: #BF5B00;
+}
+
 .app-results{
   padding: 10px;
   width: 45%;

@@ -17,7 +17,7 @@
           <h2 class="title app-controllers__bill-title">
             Bill
           </h2>
-          <input class="input app-controllers__bill-input" type="text"
+          <input class="input app-controllers__bill-input" type="number"
           placeholder="$">
         </div>
         <div class="app-controllers__tip">
@@ -26,18 +26,18 @@
           </h2>
           <ul class="app-controllers__tip-lits">
             <li class="app-controllers__tip-item">5%</li>
-            <li class="app-controllers__tip-item">10%</li>
+            <li class="app-controllers__tip-item app-controllers__tip-item--active">10%</li>
             <li class="app-controllers__tip-item">15%</li>
             <li class="app-controllers__tip-item">25%</li>
             <li class="app-controllers__tip-item">50%</li>
-            <li class="app-controllers__tip-item">Custom</li>
+            <li class="app-controllers__tip-item">0%</li>
           </ul>
         </div>
         <div class="app-controllers__people">
           <h2 class="title app-controllers__people-title">
             Number of People
           </h2>
-          <input class="input app-controllers__people-title" type="text" placeholder="№">
+          <input class="input app-controllers__people-input" type="number" placeholder="№">
         </div>
       </div>
       <div class="app-results">
@@ -47,7 +47,8 @@
               Tip Amount
             </h2>
             <div class="app-results__amount-sum">
-              $ 0.00
+              <span>$</span>
+              <span id="tip-amount">0.00</span>
             </div>
           </div>
           <div class="app-results__amount-total">
@@ -55,7 +56,8 @@
               For each person
             </h2>
             <div class="app-results__amount-sum">
-              $ 0.00
+              <span>$</span>
+              <span id="tip-person">0.00</span>
             </div>
           </div>
         </div>

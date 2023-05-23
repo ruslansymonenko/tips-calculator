@@ -4,9 +4,71 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Tip calculator</title>
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <div class="wrapper">
+    <h1 class="app-header">Tip calculator</h1>
+    <div class="app">
+      <div class="app-controllers">
+        <div class="app-controllers__bill">
+          <h2 class="title app-controllers__bill-title">
+            Bill
+          </h2>
+          <input class="input app-controllers__bill-input" type="text"
+          placeholder="$">
+        </div>
+        <div class="app-controllers__tip">
+          <h2 class="title app-controllers__tip-title">
+            Select Tip %
+          </h2>
+          <ul class="app-controllers__tip-lits">
+            <li class="app-controllers__tip-item">5%</li>
+            <li class="app-controllers__tip-item">10%</li>
+            <li class="app-controllers__tip-item">15%</li>
+            <li class="app-controllers__tip-item">25%</li>
+            <li class="app-controllers__tip-item">50%</li>
+            <li class="app-controllers__tip-item">Custom</li>
+          </ul>
+        </div>
+        <div class="app-controllers__people">
+          <h2 class="title app-controllers__people-title">
+            Number of People
+          </h2>
+          <input class="input app-controllers__people-title" type="text" placeholder="№">
+        </div>
+      </div>
+      <div class="app-results">
+        <div class="app-results__amount">
+          <div class="app-results__amount-total">
+            <h2 class="app-results__amount-title">
+              Tip Amount
+            </h2>
+            <div class="app-results__amount-sum">
+              $ 0.00
+            </div>
+          </div>
+          <div class="app-results__amount-total">
+            <h2 class="app-results__amount-title">
+              For each person
+            </h2>
+            <div class="app-results__amount-sum">
+              $ 0.00
+            </div>
+          </div>
+        </div>
+        <div class="app-result__btns">
+          <button class="btn btn-calculate">
+            Calculate
+          </button>
+          <button class="btn btn-reset">
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-</html>
+</html> 
